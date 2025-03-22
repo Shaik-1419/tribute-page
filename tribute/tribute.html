@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Dr. A.P.J. Abdul Kalam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+        }
+
+        /* Background Image with Transparency */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.tallengestore.com/cdn/shop/files/DoctorAbdulKalam-ex-PresidentofIndia-Rocketman-Painting_512x512.jpg?v=1688681158') no-repeat center center/cover;
+            opacity: 0.2; /* Adjust transparency */
+            filter: brightness(0.7); /* Optional: Adjust brightness */
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Content Section */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: -80px;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 20px 0;
+            color: #444;
+            border-bottom: 3px solid #007BFF;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #555;
+            margin: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content {
+            text-align: left;
+            margin: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            font-size: 1rem;
+            border-radius: 0 0 10px 10px;
+        }
+
+        /* Smooth Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Tribute to Dr. A.P.J. Abdul Kalam</h1>
+    </div>
+
+    <!-- Tribute Content -->
+    <div class="container">
+        <p class="quote">"Dream, dream, dream. Dreams transform into thoughts and thoughts result in action." - A.P.J. Abdul Kalam</p>
+
+        <div class="content">
+            <h2>About Dr. Kalam</h2>
+            <p>
+                Dr. Avul Pakir Jainulabdeen Abdul Kalam, known as the **Missile Man of India**, was an eminent scientist and leader. Born on **15th October 1931**, he played a crucial role in India's **space and missile development programs**.
+            </p>
+            <p>
+                He served as the **11th President of India** from **2002 to 2007**, winning millions of hearts with his humility, wisdom, and vision for a developed India.
+            </p>
+            
+            <h2>Achievements</h2>
+            <ul>
+                <li>Developed India's first **indigenous satellite launch vehicle (SLV)**</li>
+                <li>Key figure in the **Pokhran-II nuclear tests** (1998)</li>
+                <li>Authored **"Wings of Fire"**, an inspiring autobiography</li>
+                <li>Recipient of India's highest honor, the **Bharat Ratna**</li>
+            </ul>
+
+            <h2>Legacy</h2>
+            <p>
+                Dr. Kalam's impact on education, technology, and national development is **immortal**. Even after his passing on **27th July 2015**, his teachings continue to inspire young minds across the world.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>Made with ❤️ in memory of Dr. A.P.J. Abdul Kalam</p>
+        </div>
+    </div>
+
+</body>
+</html>
